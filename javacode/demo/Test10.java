@@ -29,6 +29,7 @@ public class Test10 {
 
 			// pc guess 電腦猜
 			int pc_guess = random.nextInt(max-min-1)+1+min;
+			System.out.printf("電腦在 %d~%d 之間猜一數字: %d\n", min, max, pc_guess);
 			if (pc_guess > ans) {
 				max = pc_guess;
 			} else if (pc_guess < ans) {
