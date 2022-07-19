@@ -34,6 +34,40 @@ public class Test3 {
 				System.out.println("性別錯誤");
 		}
 
+		// 判斷設籍前身分 swicth-case
+		/*
+			6	取得國籍之外國人
+			7	無戶籍國民
+			8	港澳居民
+			9	大陸地區人民
+			0~5	其他
+		*/
+		switch(before) {
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+				System.out.println("其他");
+				break;
+			case '6':
+				System.out.println("取得國籍之外國人");
+				break;
+			case '7':
+				System.out.println("無戶籍國民");
+				break;
+			case '8':
+				System.out.println("港澳居民");
+				break;
+			case '9':
+				System.out.println("大陸地區人民");
+				break;
+			default:
+				System.out.println("資料錯誤");	
+
+		}
+
 
 	}
 }
