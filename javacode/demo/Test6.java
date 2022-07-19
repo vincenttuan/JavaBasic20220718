@@ -6,7 +6,7 @@ public class Test6 {
 	public static void main(String[] args) {
 		Random random = new Random();
 
-		boolean pass = false;
+		boolean pass = true;
 		while(pass) {
 
 			System.out.println(random.nextInt()); // 取得一個整數隨機數
