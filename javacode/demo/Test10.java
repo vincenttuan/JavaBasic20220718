@@ -28,7 +28,7 @@ public class Test10 {
 			}
 
 			// pc guess 電腦猜
-			int pc_guess = random.next(max-min-1)+1+min;
+			int pc_guess = random.nextInt(max-min-1)+1+min;
 			if (pc_guess > ans) {
 				max = pc_guess;
 			} else if (pc_guess < ans) {
