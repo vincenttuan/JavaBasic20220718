@@ -12,6 +12,8 @@ public class Test2 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("請輸入分數: ");
 		int score = scanner.nextInt();
+		
+		// 判斷等第使用 if-else
 		// && and, || or
 		if (score >= 90 && score <= 100) {
 			System.out.println("A");
@@ -27,5 +29,32 @@ public class Test2 {
 			System.out.println("成績輸入錯誤");
 			System.out.println("成績必須介於0~100間");
 		}
+
+		// 判斷等第使用 switch-case
+		if(score >= 0 && score <= 100) {
+			switch(score/10) {
+				case 10:
+				case 9:
+					System.out.println("A");
+					break;
+				case 8:
+					System.out.println("B");
+					break;
+				case 7:
+					System.out.println("C");
+					break;
+				case 6:
+					System.out.println("D");
+					break;
+				default:
+					System.out.println("E");
+			}	
+		} else {
+			System.out.println("成績輸入錯誤");
+			System.out.println("成績必須介於0~100間");
+		}
+
+		
+
 	}
 }
