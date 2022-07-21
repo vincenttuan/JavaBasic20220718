@@ -12,6 +12,10 @@ public class ParkingLot {
 			String parkingString = String.format("%5s", Integer.toBinaryString(parking));
 			parkingString = parkingString.replace(' ', '0');
 			System.out.println("停車位: " + parkingString);
+			// 是否還有車位 ?
+			boolean isEmpty = parking != 0b11111;
+			//System.out.println("是否還有車位: " + isEmpty);
+			System.out.println("是否還有車位: " + (isEmpty?"有空位":"車位已滿"));
 			// 使用者操作
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("請選擇: 停車(1) 取車(2) 離開(0) ==> ");
