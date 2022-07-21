@@ -17,6 +17,14 @@ public class BitOperation5 {
 		} else {
 			System.out.println("該車位無車可移!");
 		}
+		// 不會 0
 		System.out.println("停車位: " + Integer.toBinaryString(parking));
+		// 先補 ' '
+		String parkingString = String.format("%5s", Integer.toBinaryString(parking));
+		System.out.println("停車位: " + parkingString);
+		// '0' 取代 ' '
+		parkingString = parkingString.replace(' ', '0');
+		System.out.println("停車位: " + parkingString);
+			
 	}
 }
